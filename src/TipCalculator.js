@@ -1,7 +1,7 @@
 import { useState } from "react";
-// import TipCalculator from "./TipCalculator";
+import "./TipCalculator.css";
 
-function App() {
+const TipCalculator = () => {
   const [amount, setAmount] = useState("");
   const [tip, setTip] = useState(0);
   const [total, setTotal] = useState(0);
@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <div class="container-flex">
+    <div class="mainContainer">
       <div class="row justify-content-center">
         <div class="col-6">
           <div class="text-center">
@@ -65,6 +65,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
-export default App;
+export default TipCalculator;
